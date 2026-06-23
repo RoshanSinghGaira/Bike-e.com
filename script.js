@@ -29,30 +29,56 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 4000);
 
     // ============================
-    // HEADER SCROLL BEHAVIOR
+    // PREMIUM HEADER SCROLL BEHAVIOR
     // ============================
-    const header = document.getElementById('header');
-    let lastScrollY = 0;
+
+    const header = document.getElementById("header");
+
+    let lastScrollY = window.scrollY;
     let ticking = false;
 
     function updateHeader() {
-        const scrollY = window.scrollY;
 
-        if (scrollY > 80) {
-            header.classList.add('header--scrolled');
+        const currentScrollY = window.scrollY;
+
+        // Glass effect when scrolling
+        if (currentScrollY > 80) {
+            header.classList.add("header--scrolled");
         } else {
-            header.classList.remove('header--scrolled');
+            header.classList.remove("header--scrolled");
         }
 
-        lastScrollY = scrollY;
+        // Hide navbar when scrolling down
+        if (
+            currentScrollY > lastScrollY &&
+            currentScrollY > 150
+        ) {
+            header.classList.add("header-hidden");
+        }
+
+        // Show navbar when scrolling up
+        if (
+            currentScrollY < lastScrollY
+        ) {
+            header.classList.remove("header-hidden");
+        }
+
+        // Always show at top
+        if (currentScrollY <= 50) {
+            header.classList.remove("header-hidden");
+        }
+
+        lastScrollY = currentScrollY;
         ticking = false;
     }
 
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
+
         if (!ticking) {
-            requestAnimationFrame(updateHeader);
+            window.requestAnimationFrame(updateHeader);
             ticking = true;
         }
+
     });
 
     // ============================

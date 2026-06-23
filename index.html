@@ -33,64 +33,158 @@
         </div>
     </div>
 
-    <!-- ====== HEADER / NAVIGATION ====== -->
+
+    <!-- ==========================================
+     PREMIUM HEADER
+========================================== -->
+
     <header class="header" id="header">
+
         <div class="container">
+
             <div class="header__inner">
+
                 <!-- Logo -->
-                <a href="#" class="header__logo" id="header-logo" aria-label="Veloura Bikes Home">
-                    <span class="header__logo-text">Veloura</span>
-                    <span class="header__logo-mark"></span>
-                    <span class="header__logo-sub">Bikes</span>
+                <a href="#" class="header__logo">
+
+                    <span class="header__logo-text">
+                        Veloura
+                    </span>
+
+                    <span class="header__logo-sub">
+                        Motorcycle House
+                    </span>
+
                 </a>
 
                 <!-- Navigation -->
-                <nav class="header__nav" aria-label="Main navigation">
+                <nav class="header__nav">
+
                     <ul class="header__nav-list">
-                        <li><a href="#featured" class="header__nav-link" id="nav-collection">Collection</a></li>
-                        <li><a href="#categories" class="header__nav-link" id="nav-categories">Categories</a></li>
-                        <li><a href="#brand-story" class="header__nav-link" id="nav-story">Our Story</a></li>
-                        <li><a href="#journal" class="header__nav-link" id="nav-journal">Journal</a></li>
-                        <li><a href="#newsletter" class="header__nav-link" id="nav-contact">Contact</a></li>
+
+                        <li>
+                            <a href="#featured" class="header__nav-link">
+                                Machines
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#categories" class="header__nav-link">
+                                Collections
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#brand-story" class="header__nav-link">
+                                Heritage
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#journal" class="header__nav-link">
+                                Journal
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#newsletter" class="header__nav-link">
+                                Concierge
+                            </a>
+                        </li>
+
                     </ul>
+
                 </nav>
 
                 <!-- Actions -->
                 <div class="header__actions">
-                    <button class="header__icon-btn" id="search-btn" aria-label="Search">
+
+                    <!-- Search -->
+                    <button class="header__icon-btn" aria-label="Search">
+
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor">
+
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+
                         </svg>
+
                     </button>
-                    <button class="header__icon-btn" id="cart-btn" aria-label="Shopping cart">
+
+                    <!-- Wishlist -->
+                    <button class="header__icon-btn" aria-label="Wishlist">
+
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor">
+
                             <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                d="m21.752 6.227-1.514-1.514a5.25 5.25 0 0 0-7.424 0L12 5.527l-.814-.814a5.25 5.25 0 0 0-7.424 7.424l.814.814L12 20.375l7.424-7.424.814-.814a5.25 5.25 0 0 0 0-7.424Z" />
+
                         </svg>
-                        <span class="header__cart-count">0</span>
+
                     </button>
 
-                    <!-- Mobile Menu Toggle -->
-                    <button class="header__menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <!-- Cart -->
+                    <button class="header__icon-btn" id="cart-btn">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z" />
+
+                        </svg>
+
+                        <span class="header__cart-count">
+                            0
+                        </span>
+
                     </button>
+
+                    <!-- Mobile Menu -->
+                    <button class="header__menu-toggle" id="menu-toggle" aria-label="Open Menu">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+
                 </div>
+
             </div>
+
         </div>
+
     </header>
 
-    <!-- Mobile Navigation -->
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
-        <a href="#featured" class="mobile-nav__link">Collection</a>
-        <a href="#categories" class="mobile-nav__link">Categories</a>
-        <a href="#brand-story" class="mobile-nav__link">Our Story</a>
-        <a href="#journal" class="mobile-nav__link">Journal</a>
-        <a href="#newsletter" class="mobile-nav__link">Contact</a>
+    <!-- ==========================================
+     MOBILE NAVIGATION
+========================================== -->
+
+    <nav class="mobile-nav" id="mobile-nav">
+
+        <a href="#featured" class="mobile-nav__link">
+            Machines
+        </a>
+
+        <a href="#categories" class="mobile-nav__link">
+            Collections
+        </a>
+
+        <a href="#brand-story" class="mobile-nav__link">
+            Heritage
+        </a>
+
+        <a href="#journal" class="mobile-nav__link">
+            Journal
+        </a>
+
+        <a href="#newsletter" class="mobile-nav__link">
+            Concierge
+        </a>
+
     </nav>
 
     <main>
