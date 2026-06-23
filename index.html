@@ -96,21 +96,25 @@
     <main>
         <!-- ====== HERO SECTION ====== -->
         <section class="hero" id="hero">
-            <div class="hero__bg">
-                <img src="images/hero-motorcycle.png" alt="Premium motorcycle on a scenic mountain road at golden hour"
-                    loading="eager">
+            <div class="hero__video-wrapper">
+                <video autoplay loop muted playsinline class="hero__video">
+                    <source
+                        src="https://assets.mixkit.co/videos/preview/mixkit-motorcycle-rider-on-a-highway-at-sunset-11883-large.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
             <div class="hero__overlay"></div>
             <div class="container">
                 <div class="hero__content">
-                    <span class="hero__label">Est. 2024 &mdash; Premium Collection</span>
+                    <span class="hero__label">Est. 2024 &mdash; Premium Commission</span>
                     <h1 class="hero__title">
-                        Crafted for the
+                        Crafted For The
                         <span>Road Ahead.</span>
                     </h1>
                     <p class="hero__description">
-                        Where performance meets artistry. Discover a curated selection of
-                        motorcycles built for those who demand excellence in every mile.
+                        Where raw power meets high art. Explore our curated selection of bespoke motorcycles, engineered
+                        for riders who demand absolute performance and uncompromising design.
                     </p>
                     <div class="hero__ctas">
                         <a href="#featured" class="btn btn--primary" id="cta-explore">
@@ -125,11 +129,102 @@
                             Book a Test Ride
                         </a>
                     </div>
+
+                    <!-- Animated Statistics -->
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <span class="hero__stat-num" data-target="50000">0</span>
+                            <span class="hero__stat-label">50K+ Riders</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-num" data-target="15">0</span>
+                            <span class="hero__stat-label">15+ Cities</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-num" data-target="4.9" data-decimal="true">0</span>
+                            <span class="hero__stat-label">4.9/5 Rating</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-num" data-target="10">0</span>
+                            <span class="hero__stat-label">10+ Years</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="hero__scroll-indicator">
-                <span class="hero__scroll-text">Scroll</span>
-                <div class="hero__scroll-line"></div>
+        </section>
+
+        <!-- ====== LUXURY MARQUEE ====== -->
+        <div class="marquee-wrapper">
+            <div class="marquee-content">
+                <span>PREMIUM ENGINEERING • TEST RIDES AVAILABLE • NATIONWIDE DELIVERY • 5 YEAR WARRANTY • PERFORMANCE
+                    WITHOUT COMPROMISE</span>
+                <span>PREMIUM ENGINEERING • TEST RIDES AVAILABLE • NATIONWIDE DELIVERY • 5 YEAR WARRANTY • PERFORMANCE
+                    WITHOUT COMPROMISE</span>
+            </div>
+        </div>
+
+        <!-- ====== FEATURED BIKE OF THE MONTH ====== -->
+        <section class="featured-month section-padding" id="featured-month">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Featured Showcase</span>
+                    <h2 class="section-title">Machine of the Month</h2>
+                </div>
+                <div class="featured-month__grid">
+                    <div class="featured-month__image reveal">
+                        <img src="images/featured_bike.png" alt="Veloura GT Gold & Black Edition">
+                    </div>
+                    <div class="featured-month__content reveal reveal-delay-1">
+                        <span class="featured-month__badge">Limited Edition</span>
+                        <h3 class="featured-month__name">Veloura GT Black Edition</h3>
+                        <p class="featured-month__desc">
+                            A masterclass in modern cafe racer engineering. Crafted with high-tensile carbon panels,
+                            brushed brass accents, and a custom-tuned exhaust system that screams pure heritage power.
+                            Available for select collectors.
+                        </p>
+                        <div class="featured-month__specs">
+                            <div class="featured-month__spec">
+                                <span>Engine</span>
+                                <span>649cc Twin</span>
+                            </div>
+                            <div class="featured-month__spec">
+                                <span>Power</span>
+                                <span>95 HP</span>
+                            </div>
+                            <div class="featured-month__spec">
+                                <span>Top Speed</span>
+                                <span>210 km/h</span>
+                            </div>
+                            <div class="featured-month__spec">
+                                <span>Price</span>
+                                <span>Starting at ₹3,10,000</span>
+                            </div>
+                        </div>
+                        <a href="#featured" class="btn btn--primary" id="explore-gt-btn">
+                            Explore Model
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== LIFESTYLE IMAGE 1 (Mountain) ====== -->
+        <section class="lifestyle-banner lifestyle-banner--mountain" id="lifestyle-1">
+            <div class="lifestyle-banner__bg">
+                <img src="images/lifestyle_mountain.png" alt="Rider cruising along mountain road at sunrise">
+            </div>
+            <div class="lifestyle-banner__overlay"></div>
+            <div class="container">
+                <div class="lifestyle-banner__content reveal">
+                    <h2>Pursue The Horizon</h2>
+                    <p>It is not the speed, but the state of absolute freedom. Handcrafted engines built to conquer
+                        mountain passes and highway curves alike.</p>
+                </div>
             </div>
         </section>
 
@@ -137,262 +232,379 @@
         <section class="featured section-padding" id="featured">
             <div class="container">
                 <div class="section-header reveal">
-                    <span class="section-label">Featured Collection</span>
-                    <h2 class="section-title">Exceptional Machines</h2>
+                    <span class="section-label">Bespoke Collection</span>
+                    <h2 class="section-title">Explore Our Fleet</h2>
                     <p class="section-subtitle">
-                        Each motorcycle in our collection represents the pinnacle of engineering
-                        and design, selected for riders who accept nothing less.
+                        Select a category to discover motorcycles engineered for absolute performance.
                     </p>
                 </div>
+            </div>
 
-                <div class="featured__grid">
-                    <!-- Product Card 1 -->
-                    <article class="product-card reveal reveal-delay-1" id="product-vortex">
-                        <div class="product-card__image">
-                            <img src="images/bike-sport-1.png" alt="Veloura Vortex RS sport motorcycle in matte black">
-                            <span class="product-card__badge">New</span>
+            <!-- Category Discovery Tabs -->
+            <div class="discovery-tabs reveal">
+                <button class="discovery-tab active" data-tab="all">All Models</button>
+                <button class="discovery-tab" data-tab="featured">Featured Bikes</button>
+                <button class="discovery-tab" data-tab="bestsellers">Best Sellers</button>
+                <button class="discovery-tab" data-tab="new">New Arrivals</button>
+                <button class="discovery-tab" data-tab="limited">Limited Editions</button>
+                <button class="discovery-tab" data-tab="electric">Electric Collection</button>
+            </div>
+
+            <div class="featured__grid discovery-grid">
+                <!-- Product Card 1 -->
+                <article class="product-card reveal reveal-delay-1" data-categories="featured bestsellers new"
+                    id="product-vortex">
+                    <div class="product-card__image">
+                        <img src="images/bike-sport-1.png" alt="Veloura Vortex RS sport motorcycle in matte black">
+                        <span class="product-card__badge">New</span>
+                    </div>
+                    <div class="product-card__body">
+                        <div class="product-card__rating-row">
+                            <span class="product-card__rating">★★★★★ 4.9</span>
+                            <span class="product-card__reviews">(328 Reviews)</span>
                         </div>
-                        <div class="product-card__body">
-                            <span class="product-card__category">Sport</span>
-                            <h3 class="product-card__name">Vortex RS 1000</h3>
-                            <p class="product-card__description">
-                                Track-bred performance meets road-ready refinement.
-                                998cc inline-four with precision handling.
-                            </p>
-                            <div class="product-card__footer">
-                                <div class="product-card__price">
-                                    $18,990
-                                    <span>Starting price</span>
-                                </div>
-                                <a href="#" class="product-card__cta" id="view-vortex">
-                                    View Details
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                    </svg>
-                                </a>
+                        <span class="product-card__category">Sport</span>
+                        <h3 class="product-card__name">Vortex RS 1000</h3>
+                        <p class="product-card__description">
+                            Track-bred performance meets road-ready refinement. 998cc inline-four engine with precision
+                            handling.
+                        </p>
+                        <div class="product-card__specifications">
+                            <span>998cc</span>
+                            <span>•</span>
+                            <span>208 HP</span>
+                        </div>
+                        <div class="product-card__footer">
+                            <div class="product-card__price">
+                                ₹18,90,000
+                                <span>Starting price</span>
                             </div>
-                            <button class="btn product-card__add-to-cart btn--add-to-cart" data-id="vortex"
-                                data-name="Vortex RS 1000" data-price="18990" data-image="images/bike-sport-1.png">
-                                Add to Cart
+                            <a href="#" class="product-card__cta" id="view-vortex">
+                                Details
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                                 </svg>
-                            </button>
+                            </a>
                         </div>
-                    </article>
+                        <button class="btn product-card__add-to-cart btn--add-to-cart" data-id="vortex"
+                            data-name="Vortex RS 1000" data-price="1890000" data-image="images/bike-sport-1.png">
+                            Add to Cart
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </article>
 
-                    <!-- Product Card 2 -->
-                    <article class="product-card reveal reveal-delay-2" id="product-heritage">
-                        <div class="product-card__image">
-                            <img src="images/bike-cruiser-1.png"
-                                alt="Veloura Heritage 1200 cruiser motorcycle in burgundy">
+                <!-- Product Card 2 -->
+                <article class="product-card reveal reveal-delay-2" data-categories="bestsellers" id="product-heritage">
+                    <div class="product-card__image">
+                        <img src="images/bike-cruiser-1.png" alt="Veloura Heritage 1200 cruiser motorcycle in burgundy">
+                    </div>
+                    <div class="product-card__body">
+                        <div class="product-card__rating-row">
+                            <span class="product-card__rating">★★★★★ 4.8</span>
+                            <span class="product-card__reviews">(192 Reviews)</span>
                         </div>
-                        <div class="product-card__body">
-                            <span class="product-card__category">Cruiser</span>
-                            <h3 class="product-card__name">Heritage 1200 Classic</h3>
-                            <p class="product-card__description">
-                                Timeless cruiser style with a 1,200cc V-twin engine.
-                                Chrome accents, leather comfort, open-road soul.
-                            </p>
-                            <div class="product-card__footer">
-                                <div class="product-card__price">
-                                    $15,490
-                                    <span>Starting price</span>
-                                </div>
-                                <a href="#" class="product-card__cta" id="view-heritage">
-                                    View Details
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                    </svg>
-                                </a>
+                        <span class="product-card__category">Cruiser</span>
+                        <h3 class="product-card__name">Heritage 1200 Classic</h3>
+                        <p class="product-card__description">
+                            Timeless cruiser style with a 1,200cc V-twin engine. Chrome accents, leather comfort,
+                            open-road soul.
+                        </p>
+                        <div class="product-card__specifications">
+                            <span>1200cc</span>
+                            <span>•</span>
+                            <span>95 HP</span>
+                        </div>
+                        <div class="product-card__footer">
+                            <div class="product-card__price">
+                                ₹15,40,000
+                                <span>Starting price</span>
                             </div>
-                            <button class="btn product-card__add-to-cart btn--add-to-cart" data-id="heritage"
-                                data-name="Heritage 1200 Classic" data-price="15490"
-                                data-image="images/bike-cruiser-1.png">
-                                Add to Cart
+                            <a href="#" class="product-card__cta" id="view-heritage">
+                                Details
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                                 </svg>
-                            </button>
+                            </a>
                         </div>
-                    </article>
+                        <button class="btn product-card__add-to-cart btn--add-to-cart" data-id="heritage"
+                            data-name="Heritage 1200 Classic" data-price="1540000"
+                            data-image="images/bike-cruiser-1.png">
+                            Add to Cart
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </article>
 
-                    <!-- Product Card 3 -->
-                    <article class="product-card reveal reveal-delay-3" id="product-terra">
-                        <div class="product-card__image">
-                            <img src="images/bike-adventure-1.png"
-                                alt="Veloura Terra 900 adventure motorcycle in olive green">
+                <!-- Product Card 3 -->
+                <article class="product-card reveal reveal-delay-3" data-categories="bestsellers new"
+                    id="product-terra">
+                    <div class="product-card__image">
+                        <img src="images/bike-adventure-1.png"
+                            alt="Veloura Terra 900 adventure motorcycle in olive green">
+                    </div>
+                    <div class="product-card__body">
+                        <div class="product-card__rating-row">
+                            <span class="product-card__rating">★★★★★ 4.9</span>
+                            <span class="product-card__reviews">(245 Reviews)</span>
                         </div>
-                        <div class="product-card__body">
-                            <span class="product-card__category">Adventure</span>
-                            <h3 class="product-card__name">Terra 900 Explorer</h3>
-                            <p class="product-card__description">
-                                Conquer any terrain with a rugged 889cc triple engine,
-                                adaptive suspension, and all-road capability.
-                            </p>
-                            <div class="product-card__footer">
-                                <div class="product-card__price">
-                                    $14,290
-                                    <span>Starting price</span>
-                                </div>
-                                <a href="#" class="product-card__cta" id="view-terra">
-                                    View Details
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                    </svg>
-                                </a>
+                        <span class="product-card__category">Adventure</span>
+                        <h3 class="product-card__name">Terra 900 Explorer</h3>
+                        <p class="product-card__description">
+                            Conquer any terrain with a rugged 889cc engine, adaptive suspension, and all-road
+                            capability.
+                        </p>
+                        <div class="product-card__specifications">
+                            <span>889cc</span>
+                            <span>•</span>
+                            <span>115 HP</span>
+                        </div>
+                        <div class="product-card__footer">
+                            <div class="product-card__price">
+                                ₹14,20,000
+                                <span>Starting price</span>
                             </div>
-                            <button class="btn product-card__add-to-cart btn--add-to-cart" data-id="terra"
-                                data-name="Terra 900 Explorer" data-price="14290"
-                                data-image="images/bike-adventure-1.png">
-                                Add to Cart
+                            <a href="#" class="product-card__cta" id="view-terra">
+                                Details
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                                 </svg>
-                            </button>
+                            </a>
                         </div>
-                    </article>
+                        <button class="btn product-card__add-to-cart btn--add-to-cart" data-id="terra"
+                            data-name="Terra 900 Explorer" data-price="1420000"
+                            data-image="images/bike-adventure-1.png">
+                            Add to Cart
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </article>
 
-                    <!-- Product Card 4 -->
-                    <article class="product-card reveal reveal-delay-1" id="product-volt">
-                        <div class="product-card__image">
-                            <img src="images/bike-electric-1.png" alt="Veloura Volt E electric motorcycle in silver">
-                            <span class="product-card__badge">Electric</span>
+                <!-- Product Card 4 -->
+                <article class="product-card reveal reveal-delay-1" data-categories="electric" id="product-volt">
+                    <div class="product-card__image">
+                        <img src="images/bike-electric-1.png" alt="Veloura Volt E electric motorcycle in silver">
+                        <span class="product-card__badge">Electric</span>
+                    </div>
+                    <div class="product-card__body">
+                        <div class="product-card__rating-row">
+                            <span class="product-card__rating">★★★★★ 4.8</span>
+                            <span class="product-card__reviews">(112 Reviews)</span>
                         </div>
-                        <div class="product-card__body">
-                            <span class="product-card__category">Electric</span>
-                            <h3 class="product-card__name">Volt E Hyper</h3>
-                            <p class="product-card__description">
-                                The future of riding. 200km range, instant torque delivery,
-                                and zero-emission luxury performance.
-                            </p>
-                            <div class="product-card__footer">
-                                <div class="product-card__price">
-                                    $22,500
-                                    <span>Starting price</span>
-                                </div>
-                                <a href="#" class="product-card__cta" id="view-volt">
-                                    View Details
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                    </svg>
-                                </a>
+                        <span class="product-card__category">Electric</span>
+                        <h3 class="product-card__name">Volt E Hyper</h3>
+                        <p class="product-card__description">
+                            The future of riding. 200km range, instant torque delivery, and zero-emission luxury
+                            performance.
+                        </p>
+                        <div class="product-card__specifications">
+                            <span>200km Range</span>
+                            <span>•</span>
+                            <span>140 Nm</span>
+                        </div>
+                        <div class="product-card__footer">
+                            <div class="product-card__price">
+                                ₹22,50,000
+                                <span>Starting price</span>
                             </div>
-                            <button class="btn product-card__add-to-cart btn--add-to-cart" data-id="volt"
-                                data-name="Volt E Hyper" data-price="22500" data-image="images/bike-electric-1.png">
-                                Add to Cart
+                            <a href="#" class="product-card__cta" id="view-volt">
+                                Details
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                                 </svg>
-                            </button>
+                            </a>
                         </div>
-                    </article>
+                        <button class="btn product-card__add-to-cart btn--add-to-cart" data-id="volt"
+                            data-name="Volt E Hyper" data-price="2250000" data-image="images/bike-electric-1.png">
+                            Add to Cart
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </article>
 
-                    <!-- Product Card 5 -->
-                    <article class="product-card reveal reveal-delay-2" id="product-strada">
-                        <div class="product-card__image">
-                            <img src="images/bike-urban-1.png"
-                                alt="Veloura Strada 650 urban commuter motorcycle in titanium gray">
+                <!-- Product Card 5 -->
+                <article class="product-card reveal reveal-delay-2" data-categories="new" id="product-strada">
+                    <div class="product-card__image">
+                        <img src="images/bike-urban-1.png"
+                            alt="Veloura Strada 650 urban commuter motorcycle in titanium gray">
+                    </div>
+                    <div class="product-card__body">
+                        <div class="product-card__rating-row">
+                            <span class="product-card__rating">★★★★★ 4.7</span>
+                            <span class="product-card__reviews">(98 Reviews)</span>
                         </div>
-                        <div class="product-card__body">
-                            <span class="product-card__category">Urban</span>
-                            <h3 class="product-card__name">Strada 650 Urban</h3>
-                            <p class="product-card__description">
-                                Agile city performance in a refined package. 649cc twin,
-                                lightweight frame, and effortless maneuverability.
-                            </p>
-                            <div class="product-card__footer">
-                                <div class="product-card__price">
-                                    $8,990
-                                    <span>Starting price</span>
-                                </div>
-                                <a href="#" class="product-card__cta" id="view-strada">
-                                    View Details
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                    </svg>
-                                </a>
+                        <span class="product-card__category">Urban</span>
+                        <h3 class="product-card__name">Strada 650 Urban</h3>
+                        <p class="product-card__description">
+                            Agile city performance in a refined package. 649cc twin, lightweight frame, and city
+                            maneuverability.
+                        </p>
+                        <div class="product-card__specifications">
+                            <span>649cc</span>
+                            <span>•</span>
+                            <span>72 HP</span>
+                        </div>
+                        <div class="product-card__footer">
+                            <div class="product-card__price">
+                                ₹8,90,000
+                                <span>Starting price</span>
                             </div>
-                            <button class="btn product-card__add-to-cart btn--add-to-cart" data-id="strada"
-                                data-name="Strada 650 Urban" data-price="8990" data-image="images/bike-urban-1.png">
-                                Add to Cart
+                            <a href="#" class="product-card__cta" id="view-strada">
+                                Details
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                                 </svg>
-                            </button>
+                            </a>
                         </div>
-                    </article>
+                        <button class="btn product-card__add-to-cart btn--add-to-cart" data-id="strada"
+                            data-name="Strada 650 Urban" data-price="890000" data-image="images/bike-urban-1.png">
+                            Add to Cart
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </article>
 
-                    <!-- Product Card 6 -->
-                    <article class="product-card reveal reveal-delay-3" id="product-phantom">
-                        <div class="product-card__image">
-                            <img src="images/bike-sport-1.png"
-                                alt="Veloura Phantom GT touring motorcycle in dark carbon">
-                            <span class="product-card__badge">Limited</span>
+                <!-- Product Card 6 -->
+                <article class="product-card reveal reveal-delay-3" data-categories="limited" id="product-phantom">
+                    <div class="product-card__image">
+                        <img src="images/bike-sport-1.png" alt="Veloura Phantom GT touring motorcycle in dark carbon">
+                        <span class="product-card__badge">Limited</span>
+                    </div>
+                    <div class="product-card__body">
+                        <div class="product-card__rating-row">
+                            <span class="product-card__rating">★★★★★ 4.9</span>
+                            <span class="product-card__reviews">(67 Reviews)</span>
                         </div>
-                        <div class="product-card__body">
-                            <span class="product-card__category">Touring</span>
-                            <h3 class="product-card__name">Phantom GT 1400</h3>
-                            <p class="product-card__description">
-                                Grand touring excellence. 1,380cc engine with adaptive cruise,
-                                heated grips, and premium audio system.
-                            </p>
-                            <div class="product-card__footer">
-                                <div class="product-card__price">
-                                    $26,900
-                                    <span>Starting price</span>
-                                </div>
-                                <a href="#" class="product-card__cta" id="view-phantom">
-                                    View Details
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="2" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                    </svg>
-                                </a>
+                        <span class="product-card__category">Touring</span>
+                        <h3 class="product-card__name">Phantom GT 1400</h3>
+                        <p class="product-card__description">
+                            Grand touring excellence. 1,380cc engine with adaptive cruise control and heated grips.
+                        </p>
+                        <div class="product-card__specifications">
+                            <span>1380cc</span>
+                            <span>•</span>
+                            <span>125 HP</span>
+                        </div>
+                        <div class="product-card__footer">
+                            <div class="product-card__price">
+                                ₹26,90,000
+                                <span>Starting price</span>
                             </div>
-                            <button class="btn product-card__add-to-cart btn--add-to-cart" data-id="phantom"
-                                data-name="Phantom GT 1400" data-price="26900" data-image="images/bike-sport-1.png">
-                                Add to Cart
+                            <a href="#" class="product-card__cta" id="view-phantom">
+                                Details
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                                 </svg>
-                            </button>
+                            </a>
                         </div>
-                    </article>
-                </div>
+                        <button class="btn product-card__add-to-cart btn--add-to-cart" data-id="phantom"
+                            data-name="Phantom GT 1400" data-price="2690000" data-image="images/bike-sport-1.png">
+                            Add to Cart
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </article>
 
-                <div class="section-header" style="margin-top: 3rem; margin-bottom: 0;">
-                    <a href="#" class="btn btn--dark" id="cta-view-all">
-                        View All Collection
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                        </svg>
-                    </a>
+                <!-- Product Card 7 -->
+                <article class="product-card reveal reveal-delay-1" data-categories="featured limited"
+                    id="product-veloura-gt">
+                    <div class="product-card__image">
+                        <img src="images/featured_bike.png" alt="Veloura GT Black Edition">
+                        <span class="product-card__badge">Limited</span>
+                    </div>
+                    <div class="product-card__body">
+                        <div class="product-card__rating-row">
+                            <span class="product-card__rating">★★★★★ 5.0</span>
+                            <span class="product-card__reviews">(85 Reviews)</span>
+                        </div>
+                        <span class="product-card__category">Cafe Racer</span>
+                        <h3 class="product-card__name">Veloura GT Black Edition</h3>
+                        <p class="product-card__description">
+                            Bespoke hand-welded cafe racer engineering. Crafted with raw titanium and limited to 50
+                            builds.
+                        </p>
+                        <div class="product-card__specifications">
+                            <span>649cc</span>
+                            <span>•</span>
+                            <span>95 HP</span>
+                        </div>
+                        <div class="product-card__footer">
+                            <div class="product-card__price">
+                                ₹3,10,000
+                                <span>Starting price</span>
+                            </div>
+                            <a href="#" class="product-card__cta" id="view-veloura-gt">
+                                Details
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                        </div>
+                        <button class="btn product-card__add-to-cart btn--add-to-cart" data-id="veloura-gt"
+                            data-name="Veloura GT Black Edition" data-price="310000"
+                            data-image="images/featured_bike.png">
+                            Add to Cart
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </article>
+            </div>
+            </div>
+        </section>
+
+        <!-- ====== LIFESTYLE IMAGE 2 (Coastal) ====== -->
+        <section class="lifestyle-banner lifestyle-banner--coastal" id="lifestyle-2">
+            <div class="lifestyle-banner__bg">
+                <img src="images/lifestyle_coastal.png" alt="Motorcycle riding along coastal highway at sunset">
+            </div>
+            <div class="lifestyle-banner__overlay"></div>
+            <div class="container">
+                <div class="lifestyle-banner__content reveal">
+                    <h2>Embrace The Journey</h2>
+                    <p>Winding coastal roads, salty ocean breeze, and the rhythmic beat of a V-twin engine. Escape the
+                        noise and discover the therapeutic art of the long ride.</p>
                 </div>
             </div>
         </section>
@@ -628,7 +840,7 @@
                         </div>
                         <div class="bestseller-card__price-row">
                             <div class="bestseller-card__price">
-                                $18,990
+                                ₹18,90,000
                                 <span>MSRP</span>
                             </div>
                             <div class="bestseller-card__actions">
@@ -636,7 +848,8 @@
                                     Quick View
                                 </a>
                                 <button class="btn btn--primary btn--add-to-cart" data-id="vortex"
-                                    data-name="Vortex RS 1000" data-price="18990" data-image="images/bike-sport-1.png">
+                                    data-name="Vortex RS 1000" data-price="1890000"
+                                    data-image="images/bike-sport-1.png">
                                     Add to Cart
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="2" stroke="currentColor">
@@ -679,7 +892,7 @@
                         </div>
                         <div class="bestseller-card__price-row">
                             <div class="bestseller-card__price">
-                                $14,290
+                                ₹14,20,000
                                 <span>MSRP</span>
                             </div>
                             <div class="bestseller-card__actions">
@@ -687,7 +900,7 @@
                                     Quick View
                                 </a>
                                 <button class="btn btn--primary btn--add-to-cart" data-id="terra"
-                                    data-name="Terra 900 Explorer" data-price="14290"
+                                    data-name="Terra 900 Explorer" data-price="1420000"
                                     data-image="images/bike-adventure-1.png">
                                     Add to Cart
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -731,7 +944,7 @@
                         </div>
                         <div class="bestseller-card__price-row">
                             <div class="bestseller-card__price">
-                                $15,490
+                                ₹15,40,000
                                 <span>MSRP</span>
                             </div>
                             <div class="bestseller-card__actions">
@@ -739,7 +952,7 @@
                                     Quick View
                                 </a>
                                 <button class="btn btn--primary btn--add-to-cart" data-id="heritage"
-                                    data-name="Heritage 1200 Classic" data-price="15490"
+                                    data-name="Heritage 1200 Classic" data-price="1540000"
                                     data-image="images/bike-cruiser-1.png">
                                     Add to Cart
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -776,11 +989,24 @@
                             </svg>
                         </div>
                         <h3 class="why-us__card-title">Premium Engineering</h3>
-                        <p class="why-us__card-text">Factory-certified technicians ensuring peak performance and
-                            reliability.</p>
+                        <p class="why-us__card-text">Factory-certified custom engine tuning and frame dynamics for peak
+                            performance.</p>
                     </div>
 
-                    <div class="why-us__card reveal reveal-delay-2" id="why-delivery">
+                    <div class="why-us__card reveal reveal-delay-2" id="why-handcrafted">
+                        <div class="why-us__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456Z" />
+                            </svg>
+                        </div>
+                        <h3 class="why-us__card-title">Handcrafted Components</h3>
+                        <p class="why-us__card-text">Bespoke carbon fiber, milled brass, and hand-welded titanium panels
+                            built to order.</p>
+                    </div>
+
+                    <div class="why-us__card reveal reveal-delay-3" id="why-delivery">
                         <div class="why-us__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor">
@@ -789,11 +1015,11 @@
                             </svg>
                         </div>
                         <h3 class="why-us__card-title">Nationwide Delivery</h3>
-                        <p class="why-us__card-text">White-glove delivery service to your doorstep, anywhere in the
-                            country.</p>
+                        <p class="why-us__card-text">Secure, enclosed white-glove transport directly from our workshop
+                            to your driveway.</p>
                     </div>
 
-                    <div class="why-us__card reveal reveal-delay-3" id="why-warranty">
+                    <div class="why-us__card reveal reveal-delay-4" id="why-warranty">
                         <div class="why-us__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor">
@@ -802,20 +1028,8 @@
                             </svg>
                         </div>
                         <h3 class="why-us__card-title">Warranty Protection</h3>
-                        <p class="why-us__card-text">Comprehensive coverage plans with up to 5 years of protection.</p>
-                    </div>
-
-                    <div class="why-us__card reveal reveal-delay-4" id="why-financing">
-                        <div class="why-us__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
-                            </svg>
-                        </div>
-                        <h3 class="why-us__card-title">Easy Financing</h3>
-                        <p class="why-us__card-text">Flexible payment options with competitive rates starting at 3.9%
-                            APR.</p>
+                        <p class="why-us__card-text">Comprehensive 5-year coverage plan for ultimate peace of mind on
+                            the open road.</p>
                     </div>
 
                     <div class="why-us__card reveal reveal-delay-5" id="why-service">
@@ -828,9 +1042,39 @@
                                     d="M4.867 19.125h.008v.008h-.008v-.008Z" />
                             </svg>
                         </div>
-                        <h3 class="why-us__card-title">Service Support</h3>
-                        <p class="why-us__card-text">Dedicated service centers with genuine parts and expert care.</p>
+                        <h3 class="why-us__card-title">Service Network</h3>
+                        <p class="why-us__card-text">Exclusive access to certified master technicians and official
+                            replacement parts.</p>
                     </div>
+
+                    <div class="why-us__card reveal reveal-delay-6" id="why-financing">
+                        <div class="why-us__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+                            </svg>
+                        </div>
+                        <h3 class="why-us__card-title">Flexible Financing</h3>
+                        <p class="why-us__card-text">Tailored leasing options and premium financing plans for selective
+                            collectors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== LIFESTYLE IMAGE 3 (Workshop) ====== -->
+        <section class="lifestyle-banner lifestyle-banner--workshop" id="lifestyle-3">
+            <div class="lifestyle-banner__bg">
+                <img src="images/lifestyle_workshop.png"
+                    alt="Craftsman working on a custom motorcycle engine parts in workshop">
+            </div>
+            <div class="lifestyle-banner__overlay"></div>
+            <div class="container">
+                <div class="lifestyle-banner__content reveal">
+                    <h2>Bespoke Craftsmanship</h2>
+                    <p>No assembly lines. No mass production. Each motorcycle is meticulously hand-assembled by a single
+                        master builder, ensuring unparalleled attention to detail.</p>
                 </div>
             </div>
         </section>

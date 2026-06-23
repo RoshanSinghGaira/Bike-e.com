@@ -234,13 +234,19 @@ document.addEventListener('DOMContentLoaded', () => {
     function animateCounter(element, target, duration = 2000) {
         const start = 0;
         const startTime = performance.now();
+        const isDecimal = element.getAttribute('data-decimal') === 'true';
 
         function update(currentTime) {
             const elapsed = currentTime - startTime;
             const progress = Math.min(elapsed / duration, 1);
             const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
-            const current = Math.round(start + (target - start) * eased);
-            element.textContent = current.toLocaleString();
+            const current = start + (target - start) * eased;
+
+            if (isDecimal) {
+                element.textContent = current.toFixed(1);
+            } else {
+                element.textContent = Math.round(current).toLocaleString('en-IN');
+            }
 
             if (progress < 1) {
                 requestAnimationFrame(update);
@@ -350,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function formatCurrency(value) {
-        return '$' + Number(value).toLocaleString();
+        return '₹' + Number(value).toLocaleString('en-IN');
     }
 
     function updateCartUI() {
@@ -627,6 +633,74 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial cart render from local storage state
     updateCartUI();
+
+    // ============================
+    // HERO STATS ANIMATION TRIGGER
+    // ============================
+    const statNums = document.querySelectorAll('.hero__stat-num');
+    const statsSection = document.querySelector('.hero__stats');
+    if (statsSection && statNums.length > 0) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    statNums.forEach(el => {
+                        const target = parseFloat(el.getAttribute('data-target'));
+                        animateCounter(el, target, 2000);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        observer.observe(statsSection);
+    }
+
+    // ============================
+    // CATEGORY DISCOVERY FILTERING
+    // ============================
+    const tabs = document.querySelectorAll('.discovery-tab');
+    const cards = document.querySelectorAll('.discovery-grid .product-card');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            const filterValue = tab.getAttribute('data-tab');
+
+            cards.forEach(card => {
+                const categories = card.getAttribute('data-categories') || '';
+                const categoryArray = categories.split(' ');
+
+                if (filterValue === 'all' || categoryArray.includes(filterValue)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
+
+    // ============================
+    // PARALLAX EFFECT FOR LIFESTYLE BANNERS
+    // ============================
+    const lifestyleBanners = document.querySelectorAll('.lifestyle-banner');
+    if (lifestyleBanners.length > 0) {
+        window.addEventListener('scroll', () => {
+            requestAnimationFrame(() => {
+                lifestyleBanners.forEach(banner => {
+                    const img = banner.querySelector('.lifestyle-banner__bg img');
+                    if (img) {
+                        const rect = banner.getBoundingClientRect();
+                        if (rect.top < window.innerHeight && rect.bottom > 0) {
+                            const speed = 0.12;
+                            const yPos = -(rect.top * speed);
+                            img.style.transform = `translate3d(0, ${yPos}px, 0) scale(1.1)`;
+                        }
+                    }
+                });
+            });
+        });
+    }
 
     // ============================
     // PAGE LOAD COMPLETE LOG
