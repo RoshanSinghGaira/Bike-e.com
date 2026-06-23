@@ -113,7 +113,7 @@
                     </button>
 
                     <!-- Wishlist -->
-                    <button class="header__icon-btn" aria-label="Wishlist">
+                    <button class="header__icon-btn" id="wishlist-btn" aria-label="Wishlist">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor">
@@ -122,6 +122,10 @@
                                 d="m21.752 6.227-1.514-1.514a5.25 5.25 0 0 0-7.424 0L12 5.527l-.814-.814a5.25 5.25 0 0 0-7.424 7.424l.814.814L12 20.375l7.424-7.424.814-.814a5.25 5.25 0 0 0 0-7.424Z" />
 
                         </svg>
+
+                        <span class="header__wishlist-count">
+                            0
+                        </span>
 
                     </button>
 
@@ -347,6 +351,15 @@
                     <div class="product-card__image">
                         <img src="images/bike-sport-1.png" alt="Veloura Vortex RS sport motorcycle in matte black">
                         <span class="product-card__badge">New</span>
+                        <button class="product-card__wishlist-btn btn--wishlist" data-id="vortex"
+                            data-name="Vortex RS 1000" data-price="1890000" data-image="images/bike-sport-1.png"
+                            aria-label="Add to Wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21.752 6.227-1.514-1.514a5.25 5.25 0 0 0-7.424 0L12 5.527l-.814-.814a5.25 5.25 0 0 0-7.424 7.424l.814.814L12 20.375l7.424-7.424.814-.814a5.25 5.25 0 0 0 0-7.424Z" />
+                            </svg>
+                        </button>
                     </div>
                     <div class="product-card__body">
                         <div class="product-card__rating-row">
@@ -394,6 +407,15 @@
                 <article class="product-card reveal reveal-delay-2" data-categories="bestsellers" id="product-heritage">
                     <div class="product-card__image">
                         <img src="images/bike-cruiser-1.png" alt="Veloura Heritage 1200 cruiser motorcycle in burgundy">
+                        <button class="product-card__wishlist-btn btn--wishlist" data-id="heritage"
+                            data-name="Heritage 1200 Classic" data-price="1540000"
+                            data-image="images/bike-cruiser-1.png" aria-label="Add to Wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21.752 6.227-1.514-1.514a5.25 5.25 0 0 0-7.424 0L12 5.527l-.814-.814a5.25 5.25 0 0 0-7.424 7.424l.814.814L12 20.375l7.424-7.424.814-.814a5.25 5.25 0 0 0 0-7.424Z" />
+                            </svg>
+                        </button>
                     </div>
                     <div class="product-card__body">
                         <div class="product-card__rating-row">
@@ -444,6 +466,15 @@
                     <div class="product-card__image">
                         <img src="images/bike-adventure-1.png"
                             alt="Veloura Terra 900 adventure motorcycle in olive green">
+                        <button class="product-card__wishlist-btn btn--wishlist" data-id="terra"
+                            data-name="Terra 900 Explorer" data-price="1420000" data-image="images/bike-adventure-1.png"
+                            aria-label="Add to Wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21.752 6.227-1.514-1.514a5.25 5.25 0 0 0-7.424 0L12 5.527l-.814-.814a5.25 5.25 0 0 0-7.424 7.424l.814.814L12 20.375l7.424-7.424.814-.814a5.25 5.25 0 0 0 0-7.424Z" />
+                            </svg>
+                        </button>
                     </div>
                     <div class="product-card__body">
                         <div class="product-card__rating-row">
@@ -493,6 +524,14 @@
                     <div class="product-card__image">
                         <img src="images/bike-electric-1.png" alt="Veloura Volt E electric motorcycle in silver">
                         <span class="product-card__badge">Electric</span>
+                        <button class="product-card__wishlist-btn btn--wishlist" data-id="volt" data-name="Volt E Hyper"
+                            data-price="2250000" data-image="images/bike-electric-1.png" aria-label="Add to Wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21.752 6.227-1.514-1.514a5.25 5.25 0 0 0-7.424 0L12 5.527l-.814-.814a5.25 5.25 0 0 0-7.424 7.424l.814.814L12 20.375l7.424-7.424.814-.814a5.25 5.25 0 0 0 0-7.424Z" />
+                            </svg>
+                        </button>
                     </div>
                     <div class="product-card__body">
                         <div class="product-card__rating-row">
@@ -541,6 +580,15 @@
                     <div class="product-card__image">
                         <img src="images/bike-urban-1.png"
                             alt="Veloura Strada 650 urban commuter motorcycle in titanium gray">
+                        <button class="product-card__wishlist-btn btn--wishlist" data-id="strada"
+                            data-name="Strada 650 Urban" data-price="890000" data-image="images/bike-urban-1.png"
+                            aria-label="Add to Wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21.752 6.227-1.514-1.514a5.25 5.25 0 0 0-7.424 0L12 5.527l-.814-.814a5.25 5.25 0 0 0-7.424 7.424l.814.814L12 20.375l7.424-7.424.814-.814a5.25 5.25 0 0 0 0-7.424Z" />
+                            </svg>
+                        </button>
                     </div>
                     <div class="product-card__body">
                         <div class="product-card__rating-row">
@@ -589,6 +637,15 @@
                     <div class="product-card__image">
                         <img src="images/bike-sport-1.png" alt="Veloura Phantom GT touring motorcycle in dark carbon">
                         <span class="product-card__badge">Limited</span>
+                        <button class="product-card__wishlist-btn btn--wishlist" data-id="phantom"
+                            data-name="Phantom GT 1400" data-price="2690000" data-image="images/bike-sport-1.png"
+                            aria-label="Add to Wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21.752 6.227-1.514-1.514a5.25 5.25 0 0 0-7.424 0L12 5.527l-.814-.814a5.25 5.25 0 0 0-7.424 7.424l.814.814L12 20.375l7.424-7.424.814-.814a5.25 5.25 0 0 0 0-7.424Z" />
+                            </svg>
+                        </button>
                     </div>
                     <div class="product-card__body">
                         <div class="product-card__rating-row">
@@ -637,6 +694,15 @@
                     <div class="product-card__image">
                         <img src="images/featured_bike.png" alt="Veloura GT Black Edition">
                         <span class="product-card__badge">Limited</span>
+                        <button class="product-card__wishlist-btn btn--wishlist" data-id="veloura-gt"
+                            data-name="Veloura GT Black Edition" data-price="310000"
+                            data-image="images/featured_bike.png" aria-label="Add to Wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21.752 6.227-1.514-1.514a5.25 5.25 0 0 0-7.424 0L12 5.527l-.814-.814a5.25 5.25 0 0 0-7.424 7.424l.814.814L12 20.375l7.424-7.424.814-.814a5.25 5.25 0 0 0 0-7.424Z" />
+                            </svg>
+                        </button>
                     </div>
                     <div class="product-card__body">
                         <div class="product-card__rating-row">
@@ -1773,6 +1839,47 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
                 </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== WISHLIST DRAWER ====== -->
+    <div class="wishlist-drawer" id="wishlist-drawer" aria-hidden="true">
+        <div class="wishlist-drawer__overlay" id="wishlist-overlay"></div>
+        <div class="wishlist-drawer__content">
+            <div class="wishlist-drawer__header">
+                <h2 class="wishlist-drawer__title">
+                    Your Wishlist
+                    <span class="wishlist-drawer__count-badge" id="wishlist-drawer-count">0</span>
+                </h2>
+                <button class="wishlist-drawer__close" id="wishlist-close-btn" aria-label="Close wishlist">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="wishlist-drawer__body" id="wishlist-drawer-body">
+                <!-- Empty Wishlist State -->
+                <div class="wishlist-drawer__empty" id="wishlist-empty-state">
+                    <div class="wishlist-drawer__empty-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21.752 6.227-1.514-1.514a5.25 5.25 0 0 0-7.424 0L12 5.527l-.814-.814a5.25 5.25 0 0 0-7.424 7.424l.814.814L12 20.375l7.424-7.424.814-.814a5.25 5.25 0 0 0 0-7.424Z" />
+                        </svg>
+                    </div>
+                    <p class="wishlist-drawer__empty-text">Your wishlist is empty.</p>
+                    <p class="wishlist-drawer__empty-subtext">Save your favorite machines here to keep track of them.
+                    </p>
+                    <button class="btn btn--primary" id="wishlist-shop-btn">Explore Collection</button>
+                </div>
+
+                <!-- Wishlist Items List -->
+                <div class="wishlist-drawer__items" id="wishlist-items-container" style="display: none;">
+                    <!-- Dynamically populated via JS -->
+                </div>
             </div>
         </div>
     </div>
